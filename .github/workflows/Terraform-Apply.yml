@@ -12,7 +12,7 @@ jobs:
     env:
         AWS_ACCESS_ID: ${{ secrets.AWS_KEY_ID }}
         AWS_SECRETE__ID: ${{ secrets.AWS_SECRETE_ID }}
-        
+        AWS_REGION: "eu-west-3"
 
 
     steps:
