@@ -14,6 +14,7 @@ jobs:
         AWS_SECRETE__ID: ${{ secrets.AWS_SECRETE_ID }}
         AWS_REGION: "eu-west-3"
 
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -39,4 +40,4 @@ jobs:
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        run: terraform apply -auto-approv
+        run: terraform apply -auto-approve
